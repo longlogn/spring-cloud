@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "api.url",
+      "type": "com.cxlsky.properties.ApiUrlProperties",
+      "sourceType": "com.cxlsky.properties.ApiUrlProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "api.url.application",
+      "type": "java.util.Map<java.lang.String,java.util.List<java.lang.String>>",
+      "sourceType": "com.cxlsky.properties.ApiUrlProperties"
+    },
+    {
+      "name": "api.url.auth",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.cxlsky.properties.ApiUrlProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "api.url.permit-all",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.cxlsky.properties.ApiUrlProperties"
+    }
+  ],
+  "hints": []
+}

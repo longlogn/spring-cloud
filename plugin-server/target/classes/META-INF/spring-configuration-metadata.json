@@ -1,0 +1,63 @@
+{
+  "groups": [
+    {
+      "name": "aliyun.oss",
+      "type": "com.cxlsky.properties.AliyunOssProperties",
+      "sourceType": "com.cxlsky.properties.AliyunOssProperties"
+    },
+    {
+      "name": "spring.oauth2.wechat",
+      "type": "com.cxlsky.properties.WechatLoginProperties",
+      "sourceType": "com.cxlsky.properties.WechatLoginProperties"
+    },
+    {
+      "name": "spring.oauth2.wechat.trucker",
+      "type": "com.cxlsky.properties.WechatCommonProperties",
+      "sourceType": "com.cxlsky.properties.WechatLoginProperties",
+      "sourceMethod": "getTrucker()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "aliyun.oss.bucket",
+      "type": "java.lang.String",
+      "description": "bucket name",
+      "sourceType": "com.cxlsky.properties.AliyunOssProperties"
+    },
+    {
+      "name": "aliyun.oss.endpoint",
+      "type": "java.lang.String",
+      "description": "schema",
+      "sourceType": "com.cxlsky.properties.AliyunOssProperties"
+    },
+    {
+      "name": "aliyun.oss.id",
+      "type": "java.lang.String",
+      "description": "aliyun oss accessKeyId",
+      "sourceType": "com.cxlsky.properties.AliyunOssProperties"
+    },
+    {
+      "name": "aliyun.oss.secret",
+      "type": "java.lang.String",
+      "description": "请求加密串",
+      "sourceType": "com.cxlsky.properties.AliyunOssProperties"
+    },
+    {
+      "name": "aliyun.oss.suffix",
+      "type": "java.lang.String",
+      "description": "前缀",
+      "sourceType": "com.cxlsky.properties.AliyunOssProperties"
+    },
+    {
+      "name": "spring.oauth2.wechat.trucker.app-id",
+      "type": "java.lang.String",
+      "sourceType": "com.cxlsky.properties.WechatCommonProperties"
+    },
+    {
+      "name": "spring.oauth2.wechat.trucker.app-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.cxlsky.properties.WechatCommonProperties"
+    }
+  ],
+  "hints": []
+}

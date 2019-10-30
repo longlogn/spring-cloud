@@ -1,0 +1,48 @@
+spring:
+  cloud:
+    consul:
+      host: ${CONSUL_SERVER_HOST:localhost}
+      discovery:
+        heartbeat:
+          enabled: true
+    config:
+      server:
+        encrypt:
+          enabled: true
+        git:
+          uri: git@github.com:longlogn/config-rep.git
+          search-paths: '{profile}'
+          clone-on-start: true
+          force-pull: true
+          ignore-local-ssh-settings: true
+          private-key: |
+                        -----BEGIN RSA PRIVATE KEY-----
+                        MIIEpQIBAAKCAQEAt7BFYLc9RpAeTUmpV0USWg64DZ1lE12/n+VI+kdQtK1nQhLG
+                        DuEhXmKhUrV1NVbN+rq7raiUnRo7mrjsz9/e5Knn4HfjajINQmYKpb5XPODLpHoK
+                        4w1xcN85VRq9hKHtYBn5473TbImQb0D8qg6LTXQ36vVrmZ3aYD1OibcuFK0R5Wrn
+                        4+B2RpsVa/MY/GOHQABVEsRXWv/gp6U7D0TY0C09KGaIAzBNAAyAv7eExZOmLc4M
+                        35cZoaMOIeu8MolryiGxRBRO07Y4Rh3GzOm1eFaXqQcQs3lMARs6yU7PFz86lOGM
+                        N+hVvdJMz7G5b9gH63iRtAgje2shNMTKeADDTwIDAQABAoIBAHjLEQSF22TAtzyJ
+                        +TMrd+MDFOPXIjW3C6GBbRkwtpDqCyI3KEl2oLPp1j6Gl3opCDEehPaxCnG5Y4Le
+                        otQcWv4yAQrqrAEUwwVsBwpxffrJtQEHRIuFNplMIe6mNAS5W1k8G8k49oTEfde7
+                        e6v0/oRDrdXz5/tQA+AP0MrdTA9JlmkoeS/6fehdqXpcLwG57+Q0UrHyx4evKtl4
+                        XEaVqTPRnnIugyN3uNLCjEt9mLVKTXn0FYVuVoF9KkQZqEO9+JWxPzXzYpq3jgtF
+                        aNasYgnORUBMxnAz3m24lJGDSYdkxaMzsBScXssASzKooT04pGJMFYPTNtMiMJ5M
+                        Ihsy8ZECgYEA6+C66T+queymD+XCdA/173E8SFSZelNCAi0/ACG7VEr6h65/2FIU
+                        Rq9Hh2QePkfMActhJKxBW25Stzd01DrqTNAhkjwL1Rf8XWqueANUwf8ulOKDb0VW
+                        a2x+tCmuFkS/iAqdPVsCiFhG6L+BrigAFcg0ht/dy8v0uXP/MqrgQWcCgYEAx1vL
+                        KyXZKoRiP7UMJWoFDLnBI8VdL1tr55ALNK3iMUv79SAa5E8rjOKmXUywk7+w5h81
+                        waVzaHxqHXGmQ6f2rQwzsA0xBnQR29ab1wdgEXOnaFd1R+hDPDDlJc40dSkdiw/7
+                        c4FpZAXxtrIy3DrmmjaCRxjygf0X7Hgyg5RJNdkCgYEA6Ud9s1cLEwvvhEN4F+79
+                        DMzRkLtSer9CxgJXj1rM+OWadnvm5lruwKVzOXyTyIabRZ8NuQY/MRyf46GOAqMt
+                        u8APo5+NGDe7l+v9FqY8ugwU1pxa3r4VZPKNMMMT7+QYBIRy1A5hJ9Uec+uKZmIb
+                        C2/QOx/GLFrO8ma9GjASz7sCgYEAobYzKs/rxdJXBAhvTtYePIFdSw/ok+abs92j
+                        SVsXVRemzOL7DWGvGPwtKRdxUJg4/aIpb+guon3xcerjjJPtw9dXAiLhNrPmXKZM
+                        CXPhGKbxD/GJoAemqmebKTyITtVIMqqHNN2vyMQNmz4XhY99yXAX42Y4KPtNcbLa
+                        fuNFM5kCgYEAo0YilzMY/7wARJwKNqmDhZ11/afByBIKgn1ZnYsk9bXQaE8tIXjN
+                        Ou9W/XMKubOllhul+B+0yoCnR2XMU3f20l73adoJ/fGUYb+FcbQrBCywah5G5GIj
+                        i7e8nqnn1j1pRArkb+T+WvuJGv8ECw9lZIqiJaXq9wTRKyoBOXj1Nkc=
+                        -----END RSA PRIVATE KEY-----
+
+encrypt:
+  key: ${ENCRYPT_KEY:cxl@7373#@ofmg}

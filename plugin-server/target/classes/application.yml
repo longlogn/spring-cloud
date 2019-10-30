@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: plugin-server
+  main:
+    allow-bean-definition-overriding: true
+
+mapper:
+  mappers:
+    com.cxlsky.mapper.BaseMapper
+
+
+

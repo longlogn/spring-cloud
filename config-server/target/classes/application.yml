@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config-server
+  security:
+    user:
+      name: ${CONFIG_USERNAME:admin}
+      password: ${CONFIG_PASSWORD:admin}
+
+
+server:
+  port: ${CONFIG_SERVER_PORT:9998}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+

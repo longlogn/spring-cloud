@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: user-center
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    stream:
+      bindings:
+        test_out_put:                               #自定义的输出通道
+          destination: cxl-exchange                 #交换机名
+          group: user-center                         #通过这个指定队列名，cxl-exchange.user-center
+        test_in_put:
+          destination: cxl-exchange
+          group: user-center
+      rabbit:
+        bindings:
+          test_out_put:                                        #需要设置的通道名
+            producer:                                          #设置生产者的参数
+              exchangeType: topic                              #方式：topic（direct、fanout、topic）
+              routing-key-expression: '''test.one'''          #设置路由key
+            consumer:
+              bindingRoutingKey: test.one
+#              acknowledgeMode: manual                          #ack响应模式设定为手动模式，默认为自动模式
+
+mapper:
+  mappers:
+    com.cxlsky.mapper.BaseMapper
+
+

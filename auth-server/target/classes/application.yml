@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: authorization-server
+  main:
+    allow-bean-definition-overriding: true
+
+
+
