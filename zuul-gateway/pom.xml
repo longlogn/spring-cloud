@@ -16,7 +16,7 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
         <spring-boot.version>2.1.3.RELEASE</spring-boot.version>
-        <spring-security-oauth2.version>2.3.4.RELEASE</spring-security-oauth2.version>
+        <spring-security-oauth2.version>2.3.5.RELEASE</spring-security-oauth2.version>
         <mybatis.spring.version>1.3.2</mybatis.spring.version>
         <mybatis.version>3.4.6</mybatis.version>
         <mapper.spring.boot.starter.version>2.1.5</mapper.spring.boot.starter.version>
