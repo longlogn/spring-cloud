@@ -23,7 +23,7 @@
         <swagger2.version>2.9.2</swagger2.version>
         <commons.codec.version>1.11</commons.codec.version>
         <commons.lang3.version>3.8</commons.lang3.version>
-        <commons.io.version>2.6</commons.io.version>
+        <commons.io.version>2.7</commons.io.version>
         <commons.beanutils.version>1.9.3</commons.beanutils.version>
         <jedis.version>2.9.0</jedis.version>
         <jasypt.spring.boot.start.version>2.1.0</jasypt.spring.boot.start.version>
